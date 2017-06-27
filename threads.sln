@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_threads", "01_threads\01_threads.csproj", "{A967402D-5608-4551-B102-F0A1AAD0B46E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_threads_Server", "01_threads\01_threads_Server.csproj", "{A967402D-5608-4551-B102-F0A1AAD0B46E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Thread_Client", "02_Thread_Client\02_Thread_Client.csproj", "{23C60CBF-3B3D-4C1C-A751-F376F3197059}"
 EndProject

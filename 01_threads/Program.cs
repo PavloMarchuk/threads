@@ -23,11 +23,11 @@ namespace _01_threads
 				{
 					TcpClient client = listerner.AcceptTcpClient();
 					NetworkStream stream = client.GetStream();
-					StreamReader reader = new StreamReader(stream);
-					string message = reader.ReadLine();
-					Console.WriteLine("data: {}", message);
-					StreamWriter writer = new StreamWriter(stream);
-					writer.WriteLine(message.ToUpper() + "-server");
+					BinaryReader reader = new BinaryReader(stream);
+					string message = reader.ReadString();
+					Console.WriteLine("data: " + message);
+					BinaryWriter writer = new BinaryWriter(stream);
+					writer.Write(message.ToUpper() + "-server");
 
 					writer.Close();
 					reader.Close();
